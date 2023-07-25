@@ -5,3 +5,7 @@ je m'appelle laurie
 hello 
 
 my name is laurie
+
+hola
+
+me llamo laurie
