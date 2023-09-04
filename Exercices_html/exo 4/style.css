@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+
+#contenu{
+    background-color: lightgrey;
+}
+
+a{
+    color: greenyellow;
+}
+
+#contenu2{
+    text-align: right;
+    font-size: 2em;
+}

@@ -1,0 +1,36 @@
+h1{
+    color: red;
+    text-align: center;
+    font-size: 3em;
+}
+
+h3{
+    color: blue;
+    font-size: 2em;
+}
+
+.fondgris{
+    background-color: grey;
+}
+
+strong{
+    color: greenyellow;
+    font-weight: normal;
+}
+
+em{
+    color: orange;
+    font-size: 1.5em ;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.fondrose{
+    background-color: pink;
+}
+
+#article2{
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}
