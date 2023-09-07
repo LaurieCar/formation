@@ -1,0 +1,15 @@
+.p1{
+    box-shadow: 8px 8px 12px greenyellow;
+}
+
+.p2{
+    text-shadow: 5px 5px 9px black;
+    color: red;
+}
+
+.p3{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}

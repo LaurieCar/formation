@@ -1,0 +1,24 @@
+caption{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+table{
+    border-style: double;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-collapse: collapse;
+    text-align: center  ;
+    
+}
+
+th{
+    background-color: aqua;
+}
+
+td, th{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    
+}

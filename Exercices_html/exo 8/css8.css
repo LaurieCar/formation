@@ -1,0 +1,32 @@
+p, div{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 20px;
+}
+
+
+p{
+    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.5));
+}
+
+.carre2{
+    background: linear-gradient(-70deg,yellow,purple 25%);
+}
+
+.carre1{
+    background: linear-gradient(225deg, red,green,blue);
+}
+
+.carre3{
+    background: radial-gradient(rgb(113, 201, 223), pink);
+}
+
+.carre4{
+    background: repeating-radial-gradient(circle at center,black,white 10px);
+}
+
+.carre4:hover{
+    background: repeating-radial-gradient(circle at center,white,black 10px);
+}

@@ -1,0 +1,18 @@
+td, th{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+table{
+    border-collapse: collapse;
+    background: radial-gradient(rgba(7, 223, 7, 0.877),yellow, rgb(255, 0, 128),rgb(0, 255, 255) );
+}
+
+caption{
+    text-shadow: 2px 2px 2px rgb(228, 19, 228);
+    font-size: 4em;
+    font-family: comic sans ms;
+    background-color: yellow;
+    
+}
+
