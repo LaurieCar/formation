@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Contact</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="https://picsum.photos/800/200" alt="image1"/>
+            <h1>Bienvenue sur mon site !</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#article3">Blog</a></li>
+                <li>Gallerie</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <section>
+            <form method="post" action="monprogramme.php">
+            <fieldset>
+                <legend>Contact</legend>
+
+            <div>
+                <label for="name">Nom:<span>*</span></label>
+                <input type="text" name="nom" placeholder="Ex:Robert" minlength="2" maxlength="20"/>
+            </div>
+            <div>
+                <label for="mail">E-mail:<span>*</span></label>
+                <input type="email" name="mail" placeholder="Ex:monMail@FAI.com"/>
+            </div>
+            <div>
+                <label for="text">Laissez un commentaire:</label><br>
+                <textarea name="text" cols="70" rows="10" placeholder="Je dépose mon avis :)"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox" checked/>
+                <label for="checkbox">Envoyer une copie par E-mail !</label>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer"/>
+                <input type="reset" value="Reset"/>
+            </div>
+
+            </fieldset>
+            
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="page.fr">Lien 1</a></li>
+                <li><a href="page2.fr">Lien 2</a></li>
+                <li><a href="page3.fr">Lien 3</a></li>
+                <li><a href="page4.fr">Lien 4</a></li>
+            </ul>
+        </footer>
+    
+    </body>
+</html>

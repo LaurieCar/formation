@@ -1,0 +1,53 @@
+header{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    background: radial-gradient(ellipse at top, #CCDAE0, #EDF2F4);
+}
+
+h1{
+    color: #EF233C;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    color: #2B2D42;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline dotted;
+}
+
+article{
+    border: solid black 1px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    border: #8D99AE solid 2px;
+}
+
+footer{
+    text-align: right;
+}
+
+a:link{
+    color: #D90429 ;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: #2B2D42;
+}
+
+span{
+    color: red;
+}
