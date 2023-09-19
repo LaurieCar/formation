@@ -1,0 +1,45 @@
+@import "./variable.scss";
+
+body{
+    background-color: $fond;
+    text-align: $font;
+    ul, ol{
+        list-style-type: none;
+        font-family: $fontfamily;
+    }
+    h1{
+        color: purple;
+        grid-column: $col2;
+        grid-row: $row1;
+    }
+    div{
+        border: $border;
+        background-color: $fondDiv;
+    }
+    h2{
+        grid-column: $col2;
+        grid-row: $row1;
+        align-self: center;
+    }
+    img{
+        grid-column: $col1;
+        align-self: end;
+        justify-self: end;
+    }
+}
+
+div{
+    display: $grid;
+    grid-template-columns: $gridcolumn;
+    grid-template-rows: $gridrow;
+}
+
+ul{
+    grid-column: $col1;
+    grid-row: $row3;
+}
+
+
+
+
+
