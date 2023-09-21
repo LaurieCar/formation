@@ -29,6 +29,7 @@ body{
 
 .div3{
     background-color: white;
+    margin-right: 30px;
     border: solid black 1px;
     padding: 10px;
     text-align: center;
@@ -44,4 +45,16 @@ body{
 input{
     background-color: black;
     color: white;
+}
+
+@media only screen and (max-width:600px
+){
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .div1, .div2, .div3{
+        margin-bottom: 30px;
+    }
 }
