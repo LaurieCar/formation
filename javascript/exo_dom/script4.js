@@ -34,8 +34,30 @@ section.style.backgroundColor = 'rgb(220,220,220)';
 
 // Modif image
 // taille image
-image.style.width = '100px';
-image.style.height = '100px';
+image.style.width = '80px';
+image.style.height = '80px';
 // position image
 image.style.margin = '10px';
 image.style.float = 'right';
+
+/* // version nodelist
+// autre facon 
+const p1 = document.querySelector('p:nth-child(2)');
+const p2 = document.querySelector('p:nth-child(3)');
+const p3 = document.querySelector('p:nth-child(4)');
+
+// récupérer les attributs dans une nodelist
+const liste = document.querySelectorAll('p');
+liste[0].textContent = user.nom;
+liste[1].textContent = user.prenom;
+liste[2].textContent = user.age;
+
+for(let i=0; i<liste.length; i++){
+    liste[i].style.fontSize = '20px';
+    liste [i].style.color = 'blue';
+}
+
+liste.forEach(element => {
+    element.style.fontSize = '20px';
+    element.style.color = 'blue';
+}) */
