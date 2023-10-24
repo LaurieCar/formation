@@ -127,7 +127,7 @@ else{
 } */
 
 // Exercice 8 Tableau
-/* let nom = prompt("Saisir le nom du produit");
+let nom = prompt("Saisir le nom du produit");
 let prixHt = parseFloat(prompt("Saisir le prix HT"));
 let quantite = parseInt(prompt("Saisir la quantité"));
 
@@ -135,7 +135,7 @@ let tab = {"Nom du produit":nom, "Prix HT":prixHt, "Quantité":quantite};
 
 tab.prixTTC = prixHt*1.20*quantite;
 
-console.log(`Le prix TTC est : ${tab.prixTTC}`); */
+console.log(`Le prix TTC est : ${tab.prixTTC}`);
 
 // Exercice 9 Tableau et boucle
 // Créer le tableau en dehors de la boucle
