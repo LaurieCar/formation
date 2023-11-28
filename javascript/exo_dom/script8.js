@@ -26,17 +26,22 @@ listeBt.forEach(element=>{
 }); */
 
 // Exercice 21 DOM écouteur évènement
+
+/* // Récupération du bouton
 const bt = document.querySelector('#bt');
+//Récupération du paragraphe (pour afficher le résultat)
 const resultat = document.querySelector('#resultat');
 
+// Ajouter un écouteur évènement click sur le bouton
 bt.addEventListener('click', ()=>{
-    /* let nom = document.querySelector('#nom');
-    let prixHt = document.querySelector('#prixHt');
-    let quantite = document.querySelector('#quantite'); */
+    // Création variable total
     let total = 0;
+    // Liste des inputs text
     let inputs = document.querySelectorAll('input[type="text"]');
-    //console.log(inputs[0].value);
+    
+    // Tester si les champs sont remplis (boucle)
     for(let i=0; i<inputs.length; i++){
+        // Si les champs sont vides
         if(inputs[i].value == ""){
             inputs[i].style.backgroundColor = 'red';
         }
@@ -46,12 +51,58 @@ bt.addEventListener('click', ()=>{
 
         }
     }
+    // Tester les valeurs pour le calcul
     if(!isNaN(inputs[1].value) && !isNaN(inputs[2].value) && inputs[1].value>0 && inputs[2].value>0){
         total = (parseFloat(inputs[1].value)*parseInt(inputs[2].value)*1.20).toFixed(2);
         resultat.textContent = `Le prix TTC est égal à :  ${total} €`;
     }
     else{
-        resultat.textContent = "données invalides ";
+        resultat.textContent = "les données saisies sont invalides ";
     }
         
+}) */
+
+// Exercice 22 DOM écouteur évènement
+const password = document.querySelector('#password');
+let regexPwd = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{12,20}$/;
+const email = document.querySelector('#email');
+let regexEmail =/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const error = document.querySelector('#error');
+const bt = document.querySelector('#bt');
+
+// Ecouteur pour email
+email.addEventListener('keyup', ()=>{
+    // test si l'email match le regex
+    if(email.value.match(regexEmail)){
+        email.style.backgroundColor = 'green';
+    }
+    // test sinon ne matche pas le regex
+    else{
+        email.style.backgroundColor = 'red';
+    }
+})
+
+// Ecouteur pour le password
+password.addEventListener('blur' , ()=>{
+    console.log('test')
+    // test si le password match le regex
+    if(password.value.match(regexPwd)){
+        console.log('ok')
+        password.style.backgroundColor = 'green';
+    }
+    // test sinon ne matche pas le regex
+    else{
+        console.log('No')
+        password.style.backgroundColor = 'red';
+    }
+});
+
+// Test si les 2 inputs sont valides
+bt.addEventListener('click', ()=>{
+    if(password.value.match(regexPwd) && email.value.match(regexEmail)){
+        error.textContent = "Valide";
+    }
+    else{
+        error.textContent = "Invalide";
+    };
 })
