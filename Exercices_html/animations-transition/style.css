@@ -1,0 +1,91 @@
+h1{
+    color: red;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    text-align: center;
+}
+h1:hover{
+    color: green;
+}
+p{
+    transition-duration: 10s;
+    transition-timing-function: ease-in-out;
+}
+p:active{
+    transform: rotate(50turn);
+}
+
+@keyframes titreanimation{
+    0%{
+        transform: translateX(-50vw);
+    }
+    50%{
+        transform: translateX(-25vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+h1{
+    animation: titreanimation 2s;
+}
+
+@keyframes paranimation{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+p{
+    animation: paranimation 1s;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes bouton1{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+#btn1{
+    animation: bouton1 0.2s infinite alternate;
+}
+@keyframes bouton2{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+#btn2{
+    animation: bouton2 0.2s infinite alternate;
+}
+@keyframes bouton3{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+#btn3{
+    animation: bouton3 0.5s linear infinite alternate;
+}

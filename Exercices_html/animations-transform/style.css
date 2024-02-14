@@ -1,0 +1,22 @@
+section:first-child:hover{
+    transform: scale(2);
+    transition: all 1s ease-out;
+}
+section:first-child:active{
+    transform: rotate(1.5turn);
+    transition: all 2s ease-out;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+
+section:last-child:hover{
+    transform: skewX(40deg);   
+}
+section:last-child:active{
+    transform: translateX(200px);
+}
+p{
+    transform: scale(0.5) translateX(20px) rotate(35deg) skewY(10deg);
+}
